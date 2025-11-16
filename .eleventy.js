@@ -4,6 +4,7 @@ dayjs.extend(advancedFormat);
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
+  eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
 
   // All events (sorted by date ascending)
