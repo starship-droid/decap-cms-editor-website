@@ -1,4 +1,2 @@
-# Websites Template
-A template for a simple static website.
-
-Read more on the [template.talkingsites.org](template website)
+# Web with Decap
+Using space club template to try out Decap CMS editor

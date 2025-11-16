@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: starship-droid/decap-cms-editor-website
+  branch: main
+
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
