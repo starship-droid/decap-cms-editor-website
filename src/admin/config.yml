@@ -2,6 +2,9 @@ backend:
   name: github
   repo: starship-droid/decap-cms-editor-website
   branch: main
+  auth_scope: repo
+  base_url: https://websitewebsite.netlify.app
+  auth_endpoint: /api/auth
   commit_messages: "{{author}} edited {{path}}"
   
 publish_mode: editorial_workflow
