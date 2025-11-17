@@ -4,8 +4,13 @@ dayjs.extend(advancedFormat);
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
-  eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
+
+  //admin is left unprocessed and copied to site
+  eleventyConfig.ignores.add("src/admin/index.html");
+  eleventyConfig.ignores.add("src/admin/**/*.html");
+
+  eleventyConfig.addPassthroughCopy("src/admin");
 
   // All events (sorted by date ascending)
   eleventyConfig.addCollection("events", function (collectionApi) {
